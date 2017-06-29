@@ -1,4 +1,4 @@
-Quakes
+# Quakes
 
 This is a very simple implementation of an Android app to view Earthquakes downloaded from the
 US Geological Survey sites Programmatic Access GeoJSON Summary Format.
