@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+                  xmlns:app="http://schemas.android.com/apk/res-auto"
+                  android:title="@string/earthquake_settings">
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_service_title">
+
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="PREF_AUTO_UPDATE"
+            android:title="@string/pref_auto_update_title"
+            app:summary="@string/pref_auto_update_summary"
+            app:summaryOff="@string/pref_auto_update_summary_off"
+            app:summaryOn="@string/pref_auto_update_summary_on"/>
+
+        <ListPreference
+            android:defaultValue="60"
+            android:key="PREF_UPDATE_FREQ"
+            android:title="@string/pref_update_freq_title"
+            app:defaultValue="60"
+            app:dependency="PREF_AUTO_UPDATE"
+            app:dialogTitle="Refresh frequency"
+            app:entries="@array/update_freq_options"
+            app:entryValues="@array/update_freq_values"
+            app:key="PREF_UPDATE_FREQ"
+            app:summary="@string/pref_update_freq_summary"
+            app:title="@string/pref_update_freq_title"/>
+
+        <CheckBoxPreference
+            app:defaultValue="false"
+            app:dependency="PREF_AUTO_UPDATE"
+            app:key="PREF_SCHED_IN_WIFI_ONLY"
+            app:summaryOff="@string/pref_wifi_only_summary_off"
+            app:summaryOn="@string/pref_wifi_only_summary_on"
+            android:title="@string/pref_wifi_only_title"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/pref_cat_display_title">
+        <ListPreference
+            android:defaultValue="3"
+            android:dialogTitle="Magnitude"
+            android:entries="@array/magnitude_options"
+            android:entryValues="@array/magnitude"
+            android:key="PREF_MIN_MAG"
+            android:summary="@string/pref_min_magnitude_summary"
+            android:title="@string/pref_min_magnitude_title"/>
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,42 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Quakes</string>
+    <string name="action_settings">Settings</string>
+    <string name="earthquake_settings">Quake Settings</string>
+    <string name="pref_cat_service_title">Retrieval Service</string>
+    <string name="pref_cat_display_title">Display Settings</string>
+    <string name="pref_auto_update_title">Auto refresh</string>
+    <string name="pref_auto_update_summary">Select to turn on automatic updating of Quakes</string>
+    <string name="pref_auto_update_summary_on">Auto Refresh enabled. Updating of Quakes will occur upon starting the app and on the schedule set by Refresh Frequency.</string>
+    <string name="pref_auto_update_summary_off">Auto Refresh Disabled. Scheduled updates and update upon app start will not occur.</string>
+    <string name="pref_update_freq_title">Refresh frequency</string>
+    <string name="pref_update_freq_summary">Frequency at which to update quakes list</string>
+    <string name="pref_min_magnitude_title">Minimum magnitude</string>
+    <string name="pref_min_magnitude_summary">Select the minimum magnitude quake to display</string>
+    <string name="section_title_list">List</string>
+    <string name="section_title_map">Map</string>
+    <string name="title_activity_quake_detail">Quake Details</string>
+    <string name="detail_transition_name">detail_trans</string>
+    <string name="detail_button_title">View on USGS</string>
+    <string name="action_refresh_title">Refresh Quakes</string>
+    <string name="action_delete_data_title">Delete all Quakes</string>
+    <string name="delete_data_dialog_message">Clear all quakes from the quakes database.</string>
+    <string name="positive_button_text">Yes</string>
+    <string name="negative_button_text">No</string>
+    <string name="no_internet">Internet connection not available, unable to retrieve quakes.</string>
+    <string name="pref_wifi_only_title">WiFi Only</string>
+    <string name="pref_wifi_only_summary_on">Scheduled updates and updating upon starting this app, will occur only when connected to WiFi</string>
+    <string name="pref_wifi_only_summary_off">Scheduled updates and update upon starting this app will occur even when not connected to WiFi</string>
+    <string name="action_search">Search</string>
+    <string name="quake_fragment_list_icon">Quake Icon</string>
+    <string name="ui_new_quakes_plural" tools:ignore="PluralsCandidate">Quakes updated, there are %1$d new quakes.</string>
+    <string name="ui_new_quakes_singular">Quakes updated, there is 1 new quake</string>
+    <string name="ui_no_new_quakes">Quakes updated, there are no new quakes</string>
+    <string name="qcv_mag_format">%02.2f</string>
+    <string name="qcv_mag_dummy_val">0.00</string>
+    <string name="quake_image">Quake Icon</string>
+    <string name="notification_title_text">Quake Notification</string>
+    <string name="notification_context_text">New Quakes!</string>
+    <string name="title_activity_quake_search_activity">Quakes Search</string>
+    <string name="search_hint">Search for Quakes</string>
+
+</resources>

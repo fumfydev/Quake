@@ -1,0 +1,25 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="net.fumfy.examples.quakes.activity.QuakesActivity">
+    <item
+        android:id="@+id/action_delete_data"
+        android:enabled="true"
+        android:icon="@drawable/ic_delete_all_dark"
+        android:orderInCategory="101"
+        android:title="@string/action_delete_data_title"
+        android:visible="true"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="102"
+        android:title="@string/action_settings"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_search_dark"
+        android:title="@string/action_search"
+        android:actionViewClass="android.widget.SearchView"/>
+</menu>
